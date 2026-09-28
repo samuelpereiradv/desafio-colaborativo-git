@@ -301,7 +301,8 @@ footer a {
 }
 
 .flip-card-back {
-    background-color: #093f10 color: white;
+    background-color: #093f10 ;
+    color: white;
     transform: rotateY(180deg);
     padding: 20px;
 }

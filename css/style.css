@@ -219,24 +219,21 @@ footer a {
 }
 
 
-/*flash cards dos menbros*/
+/* --- flash Cards --- */
 
 .cards-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .flip-card-container {
     background-color: transparent;
-    width: 280px;
-    /* Largura do cartão */
-    height: 400px;
-    /* Altura fixa necessária para o efeito 3D */
+    width: 210px;
+    height: 350px;
     perspective: 1000px;
-    /* Cria o efeito de profundidade 3D */
 }
 
 .flip-card {
@@ -244,16 +241,13 @@ footer a {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
-    /* Duração da animação de giro */
+    transition: transform 0.6s ease;
     transform-style: preserve-3d;
-    /* Mantém os elementos filhos no espaço 3D */
     border-radius: 12px;
 }
 
 .flip-card-container:hover .flip-card {
     transform: rotateY(180deg);
-    /* Gira 180 graus no eixo Y */
 }
 
 .flip-card-front,
@@ -269,52 +263,61 @@ footer a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
+
+/* Frente do Cartão */
+
 .flip-card-front {
-    background-color: #ffffff;
-    color: black;
+    background-color: #fdfbf7;
+    color: #333333;
     z-index: 2;
+    border: 2px solid #c7be45;
 }
 
 .flip-card-front img {
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid #0c5706;
+    margin-bottom: 12px;
+    border: 3px solid #294425;
 }
 
 .flip-card-front h3 {
-    font-size: 1.8rem;
-    margin-bottom: 8px;
-    color: #093f10;
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+    color: #294425;
 }
 
 .flip-card-front p {
-    font-size: 1.4rem;
-    color: #555555;
+    font-size: 1.2rem;
+    color: #666666;
     margin: 0;
 }
 
+
+/* Verso do Cartão (Forçado com !important para garantir fundo escuro e texto visível) */
+
 .flip-card-back {
-    background-color: #093f10 color: white;
+    background-color: #294425 !important;
+    color: #ffffff !important;
     transform: rotateY(180deg);
-    padding: 20px;
+    border: 2px solid #eef06e;
+    z-index: 1;
 }
 
 .flip-card-back h3 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #eef06e;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #eef06e !important;
 }
 
 .flip-card-back p {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    color: #f0f0f0;
-    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #ffffff !important;
+    text-align: center;
 }

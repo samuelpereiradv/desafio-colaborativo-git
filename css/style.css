@@ -1,25 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
 }
 
-header{
+header {
     display: flex;
     background-color: #294425;
     align-items: top;
-    top:0 ;
+    top: 0;
     justify-content: space-between;
-    box-shadow: 0 2px 10px rgba(0,0,0,0,0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0, 0.5);
     line-height: 60px;
     width: 100%;
     position: fixed;
@@ -28,14 +28,13 @@ header{
     line-height: 60px;
 }
 
-.logo-logo{
+.logo-logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo{
-  
+.logo {
     font-size: 2.1rem;
     font-weight: 700;
     color: #fafafa;
@@ -43,89 +42,93 @@ header{
     text-decoration: none;
     letter-spacing: 2px;
     padding-left: 20px;
-    text-shadow: 1px 1px 1px 1px rgba(0,0,0,0,0.5);
-}
-.logo-imagem{
-    width: 40px;
-    height: 40px;   
-}
-.navbar ul{
-    display: flex;
-    list-style: none;
-    gap:5px
+    text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0, 0.5);
 }
 
-.navbar a{
+.logo-imagem {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 5px
+}
+
+.navbar a {
     text-decoration: none;
     font-size: 1.8rem;
-    color:#f8f8f8;
+    color: #f8f8f8;
     padding: 10px 15px;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     border-radius: 5px;
     transition: background-color 0.5s ease;
 }
 
-.navbar a:hover, a:active{
+.navbar a:hover,
+a:active {
     background-color: #012c63;
 }
 
-#hero{
+#hero {
     background-image: url(../img/hero.jpg);
-    width:100%;
+    width: 100%;
     height: 100vh;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
-h1{
+
+h1 {
     text-align: center;
     padding: 40px 0;
     font-size: 3rem;
 }
-section{
+
+section {
     padding: 50px 20px;
-    min-height:100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#about{
+#about {
     align-items: center;
     color: #fdfdfb;
     background-color: #284d25;
 }
 
-#about div{
+#about div {
     gap: 100px;
     display: flex;
     justify-content: space-between;
 }
 
-#about p{
-    width:700px;
-    font-size:2rem;
+#about p {
+    width: 700px;
+    font-size: 2rem;
     text-align: justify;
-    
     line-height: 3rem;
     margin-bottom: 10px;
 }
 
-#about img{
+#about img {
     width: 400px;
     height: 300px;
     border: 5px solid #080805;
     border-radius: 10px;
 }
 
-#gallery{
+#gallery {
     color: #151a00;
     background-color: #c7be45;
     display: block;
     text-align: center;
 }
 
-#gallery img{
+#gallery img {
     width: 300px;
     height: 200px;
     object-fit: cover;
@@ -133,31 +136,31 @@ section{
     margin: 15px;
     border: 2px solid #0c5706;
     border-radius: 10px;
-    box-shadow: 5px, 5px, 20px, rgba(14,14,14,0.5);
+    box-shadow: 5px, 5px, 20px, rgba(14, 14, 14, 0.5);
     transition: transform 0.3s ease;
 }
 
-#gallery img:hover{
+#gallery img:hover {
     transform: scale(1.05);
-} 
+}
 
-#map{
+#map {
     background-color: #112e00;
     align-items: center;
     padding: 0 !important;
 }
 
-#map iframe{
+#map iframe {
     border-radius: 20px;
 }
 
-#contact{
+#contact {
     color: rgb(18, 43, 1);
     background-color: #c7be45;
     align-items: center;
 }
 
-#contact form{
+#contact form {
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -165,12 +168,14 @@ section{
     text-align: left;
 }
 
-#contact label{
+#contact label {
     font-size: 1.6rem;
     margin-bottom: 5px;
     font-weight: bold;
 }
-#contact input, #contact textarea{
+
+#contact input,
+#contact textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -179,7 +184,7 @@ section{
     border-radius: 8px;
 }
 
-#contact button{
+#contact button {
     background-color: #093f10;
     color: #fcf9f9;
     font-size: 1.6rem;
@@ -191,24 +196,125 @@ section{
     width: 100%;
 }
 
-#contact button:hover{
+#contact button:hover {
     background-color: #a77302;
 }
 
-#music{
+#music {
     align-items: center;
     background-color: #083a05;
 }
 
-footer{
+footer {
     background-color: #eef06e;
     padding: 20px;
     text-align: center;
     color: #000000;
 }
 
-footer a{
+footer a {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
+}
+
+
+/*flash cards dos menbros*/
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.flip-card-container {
+    background-color: transparent;
+    width: 280px;
+    /* Largura do cartão */
+    height: 400px;
+    /* Altura fixa necessária para o efeito 3D */
+    perspective: 1000px;
+    /* Cria o efeito de profundidade 3D */
+}
+
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    /* Duração da animação de giro */
+    transform-style: preserve-3d;
+    /* Mantém os elementos filhos no espaço 3D */
+    border-radius: 12px;
+}
+
+.flip-card-container:hover .flip-card {
+    transform: rotateY(180deg);
+    /* Gira 180 graus no eixo Y */
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.flip-card-front {
+    background-color: #ffffff;
+    color: black;
+    z-index: 2;
+}
+
+.flip-card-front img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #0c5706;
+}
+
+.flip-card-front h3 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #093f10;
+}
+
+.flip-card-front p {
+    font-size: 1.4rem;
+    color: #555555;
+    margin: 0;
+}
+
+.flip-card-back {
+    background-color: #093f10 color: white;
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+
+.flip-card-back h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #eef06e;
+}
+
+.flip-card-back p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+    text-align: justify;
 }

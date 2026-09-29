@@ -218,8 +218,20 @@ footer a {
     font-weight: bold;
 }
 
+#membros {
+    background-color: #112e00;
+    align-items: center;
+    color: #fdfdfb;
+    min-height: auto !important;
+    padding: 80px 20px !important;
+}
 
-/* --- flash Cards --- */
+#membros h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #fdfdfb;
+}
 
 .cards-container {
     display: flex;
@@ -227,6 +239,9 @@ footer a {
     gap: 20px;
     justify-content: center;
     margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flip-card-container {
@@ -267,9 +282,6 @@ footer a {
     box-sizing: border-box;
 }
 
-
-/* Frente do Cartão */
-
 .flip-card-front {
     background-color: #fdfbf7;
     color: #333333;
@@ -278,28 +290,28 @@ footer a {
 }
 
 .flip-card-front img {
-    width: 100px;
-    height: 100px;
+    width: 90px !important;
+    height: 90px !important;
+    min-width: 90px;
+    min-height: 90px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 12px;
     border: 3px solid #294425;
+    display: block;
 }
 
 .flip-card-front h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 6px;
     color: #294425;
 }
 
 .flip-card-front p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #666666;
     margin: 0;
 }
-
-
-/* Verso do Cartão (Forçado com !important para garantir fundo escuro e texto visível) */
 
 .flip-card-back {
     background-color: #294425 !important;
@@ -310,28 +322,25 @@ footer a {
 }
 
 .flip-card-back h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
     color: #eef06e !important;
 }
 
 .flip-card-back p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.4;
     color: #ffffff !important;
     text-align: center;
 }
 
-
-/* Estilo do Botão do GitHub no Verso do Cartão */
-
 .github-btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 8px 16px;
+    padding: 8px 14px;
     background-color: #eef06e;
     color: #294425;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
     border-radius: 6px;
